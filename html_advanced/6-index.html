@@ -1,39 +1,261 @@
-<!DOCTYPE html>
-<html lang='en'>
->
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width,initial-scale=1",viewport-fit="cover">>
-     <meta name="description" content="Techium is a digital agency">
-     <title>Homepage - Techium</title>
-     <link rel="icon" type="image/x-icon" href="./favicon.ico">
-     <link rel="icon" type="image/png" href="./favicon.png">
-<head>
-<body>
-    <header>
-        <h1>Header</h1>
-    </header>
 <main>
-    <section>
-        <h2>Hero section </h2>
-        <h2>Services section</h2>
-        <h2>Works section</h2>
-            <article>Work 1</article>
-            <article>Work 2</article>
-            <article>Work 3</article>
-        <h2>About section</h2>
-        <h2>Latest news</h2>
-            <article>Article 1</article>
-            <article>Article 2</article>
-            <article>Article 3</article>
-        <h2>Testimonials section</h2>
-            <article>Testimonials 1</article>
-            <article>Testimonials 2</article>
-            <article>Testimonials 3</article>
-        <h2>Contact section</h2>
-    </section>
-</main>
-<footer>Footer</footer>
-        
-</body>
+  <section>
+    Hero section
+  </section>
+
+  <section>
+    Services section
+  </section>
+
+  <section>
+    Works section
+
+    <article>Work 1</article>
+    <article>Work 2</article>
+    <article>Work 3</article>
+  </section>
+
+  <section>
+    About section
+  </section>
+
+  <section>
+    Latest news section
+
+    <article>Article 1</article>
+    <article>Article 2</article>
+    <article>Article 3</article>
+  </section>
+
+  <section>
+    Testimonials section
+
+    <article>Testimonial 1</article>
+    <article>Testimonial 2</article>
+    <article>Testimonial 3</article>
+  </section>
+
+  <section>
+    Contact section
+  </section>
+</main>Claude a terminé la réponse.
+
+Create your first HTML file 0-index.html with:
+    Add the doctype on the first line (without any comment)
+    After the doctype, open and close a html tag
+    Add the language tag, specify English for ISO language code and add the direction tag (ltr or rtl) on the html tag.
+    Open your file in your browser (the page should be blank)
+11:03 PM
+Fichier créé, lu un fichier
+
+Here's what the file contains:
+
+    Line 1 — <!DOCTYPE html> declares the document type (no comment, as required)
+    Line 2 — <html lang="en" dir="ltr"> opens the HTML tag with:
+        lang="en" → ISO language code for English
+        dir="ltr" → left-to-right text direction
+    Line 3 — </html> closes the tag
+
+When opened in a browser, the page will be completely blank — there's no <head> or <body> yet, which is expected at this stage.
+0 index
+Code · HTML 
+
+Copy the content of 0-index.html into 1-index.html
+Create the head and body sections
+    inside the html tag, create the head and body tags (empty) in this order
+11:03 PM
+Fichier créé, lu un fichier
+
+1-index.html is built from 0-index.html with two empty sections added inside the <html> tag, in the correct order:
+
+    <head> — will hold metadata, title, links to stylesheets, etc.
+    <body> — will hold all visible page content
+
+The page still renders blank in the browser, as both sections are empty.
+1 index
+Code · HTML 
+
+Copy the content of 1-index.html into 2-index.html
+
+Meta charset:
+
+    add a meta tag inside the head:
+
+    add the charset attribute with the value utf-8
+    Viewport:
+    add a meta tag inside the head:
+    add an attribute name on the tag and specify that it is the meta viewport
+    add the key width with the value device-width
+    add the key initial-scale with the value 1.0
+
+    add the key viewport-fit with the value cover
+    Title:
+
+    add the title tag just after the meta viewport with value: Homepage - Techium
+    Description:
+    add a meta tag inside the head section
+    add an attribute name on the tag and specify that is the meta description
+    add another attribute called content
+
+    add the following description: Techium is a digital agency
+    Favicons:
+    download the image above to use as a favicon
+    Use the tool at https://realfavicongenerator.net/ to generate all the favicon formats
+    take the favicon.ico and favicon.png and place these at the root of your project directory, so that it is siblings with your [0-9]+-index.html files.
+    inside the head, create 2 link tags with these 3 attributes: rel, type, and href.
+        the first link tag:
+            rel: icon
+            type: image/x-icon
+            href: ./favicon.ico
+        the second link tag:
+            rel: icon
+            type: image/png
+            href: ./favicon.png
+
+11:04 PM
+Fichier créé, lu un fichier
+
+Here's a breakdown of everything added inside <head>:
+
+    <meta charset="utf-8"> — sets character encoding to UTF-8
+    <meta name="viewport" ...> — responsive viewport with width=device-width, initial-scale=1.0, and viewport-fit=cover
+    <title> — tab/browser title set to Homepage - Techium
+    <meta name="description" ...> — SEO description: Techium is a digital agency
+    Two <link> favicon tags — one for .ico and one for .png, both pointing to the root directory
+
+    Reminder for favicons: You'll need to place your favicon.ico and favicon.png files in the same directory as your HTML files. You can generate them from your logo at realfavicongenerator.net. The HTML is already wired up to reference them with ./favicon.ico and ./favicon.png.
+
+2 index
+Code · HTML 
+
+Copy the content of 2-index.html into 3-index.html
+Header:
+    create the header of your page between the open and close body tag
+    put the text Header inside the header
+Main:
+    create the main tag after the header tag
+    put the text Main content inside your main tags
+Footer:
+    create the footer tag after the main tag
+    put the text Footer inside the footer tags
+11:05 PM
+Fichier créé, lu un fichier
+
+Three semantic sections added inside <body>, in order:
+
+    <header> — page header, contains the text Header
+    <main> — primary content area, contains the text Main content
+    <footer> — page footer, contains the text Footer
+
+These are all semantic HTML5 elements, which improves accessibility and SEO by clearly defining the structure of the page.
+3 index
+Code · HTML 
+
+Copy the contents of 3-index.html into article.html
+    change the <title> to put: Article - Techium
+    inside the main tags after the text, create the aside tags with text Aside
+11:05 PM
+Fichier créé, lu un fichier
+
+Two changes made from 3-index.html:
+
+    <title> updated to Article - Techium
+    <aside> added inside <main>, after the Main content text — <aside> is a semantic element used for content tangentially related to the main content, like sidebars or callouts
+
+Article
+Code · HTML 
+
+Copy the content of 3-index.html into 5-index.html
+    inside your <main> section
+    remove the text in main, create these sections:
+        create first section and put the text Hero section inside
+        create second section and put the text Services section inside
+        create third section and put the text Works section inside
+        create fourth section and put the text About section inside
+        create fifth section and put the text Latest news section inside
+        create sixth section and put the text Testimonials section inside
+        create seventh section and put the text Contact section inside
+11:06 PM
+Fichier créé, lu un fichier
+
+The <main> content has been replaced with 7 <section> tags in order:
+
+    Hero section
+    Services section
+    Works section
+    About section
+    Latest news section
+    Testimonials section
+    Contact section
+
+Each <section> is a semantic HTML5 element used to group thematically related content — perfect for structuring a homepage like this.
+5 index
+Code · HTML 
+
+Copy the content of 5-index.html into 6-index.html
+Work articles:
+    inside the section Works section
+    add 3 article tags - inside each article write Work # where the hashtag will be the ordered number (1, 2, or 3)
+News articles:
+    inside the section Latest news section
+    add 3 article tags - inside each article write Article # where the hashtag will be the ordered number (1, 2, or 3)
+Testimonial articles:
+    inside the section Testimonials section
+    add 3 article tags - inside each article write Testimonial # where the hashtag will be the ordered number (1, 2, or 3)
+W3C won’t pass - you can ignore it
+11:07 PM
+Fichier créé, lu un fichier
+
+Three sections now have <article> tags added inside them:
+
+    Works section → Work 1, Work 2, Work 3
+    Latest news section → Article 1, Article 2, Article 3
+    Testimonials section → Testimonial 1, Testimonial 2, Testimonial 3
+
+<article> is a semantic element representing a self-contained, independently distributable piece of content — ideal for work showcases, news posts, and testimonials.
+6 index
+Code · HTML 
+Claude Fable 5 est actuellement indisponible.
+En savoir plus(opens in new tab)
+
+
+Claude est une IA et peut faire des erreurs. Veuillez vérifier les réponses.
+6 index · HTML
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Homepage - Techium</title>
+    <meta name="description" content="Techium is a digital agency">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./favicon.png">
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <section>Hero section</section>
+      <section>Services section</section>
+      <section>Works section
+        <article>Work 1</article>
+        <article>Work 2</article>
+        <article>Work 3</article>
+      </section>
+      <section>About section</section>
+      <section>Latest news section
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+      </section>
+      <section>Testimonials section
+        <article>Testimonial 1</article>
+        <article>Testimonial 2</article>
+        <article>Testimonial 3</article>
+      </section>
+      <section>Contact section</section>
+    </main>
+    <footer>Footer</footer>
+  </body>
 </html>
+ 
+
